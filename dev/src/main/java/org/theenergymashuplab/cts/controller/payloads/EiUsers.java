@@ -26,7 +26,7 @@ import XSD-01.EIClasses.refID;
 */
 
 @RestController
-@RequestMapping("/Users")
+@RequestMapping("/users")
 
 public class EiUsers {
 	
@@ -77,9 +77,15 @@ public class EiUsers {
 	}
 
 	/* 4) get all Tenders */
-	@GetMapping("/allTenders")
-	public List<EiUsersModel> getAllTenders(){
+	@GetMapping("/allUsers")
+	public List<EiUsersModel> getAllUsers(){
 		
 		return userdao.findAll();
+	}
+
+	/*Verfy login*/
+	@PostMapping("/login")
+	public List<EiUsersModel> login(String email, String password) {
+		return userdao.verify(email, password);
 	}
 }

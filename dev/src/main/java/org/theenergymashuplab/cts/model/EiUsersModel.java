@@ -87,7 +87,11 @@ public class EiUsersModel {
 	public void setStartDate(Date startDate) {
 	    this.startDate = startDate;
 	} */
-	
-	
-	
+
+	/*public void verify(String email, String password) {
+
+		EiUsersModel temp = new EiUsersModel();
+
+	}*/
+
 }

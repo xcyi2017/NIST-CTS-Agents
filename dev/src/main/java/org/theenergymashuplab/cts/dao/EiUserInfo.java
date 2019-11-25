@@ -48,5 +48,9 @@ public class EiUserInfo { /*Service class used to process the reqquests */
 		return userRepo.findAll();
 	}
 
-	
+	/*public List<EiUsersModel> verify(String email, String password) {
+
+		return userRepo.verify(email, password);
+	}*/
+
 }
